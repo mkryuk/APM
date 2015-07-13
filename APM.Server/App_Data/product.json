@@ -1,0 +1,10 @@
+﻿[
+        {
+            "productId": 1,
+            "productName": "Leaf Rakke",
+            "productCode": "FFS-d23",
+            "releaseDate": "March 19, 2009",
+            "description": "Some description here",
+            "price": 20.23
+        }
+    ]
