@@ -19,7 +19,9 @@ namespace APM.Server
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.EnableCors();
+            config.Formatters.JsonFormatter
+                .SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

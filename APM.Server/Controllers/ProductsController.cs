@@ -4,12 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using APM.Server.Models;
 
 namespace APM.Server.Controllers
 {
     public class ProductsController : ApiController
     {
+        [EnableCors("*","*", "*")]
         // GET: api/Products        
         public IEnumerable<Product> Get()
         {
