@@ -1,10 +1,26 @@
 ﻿[
-        {
-            "productId": 1,
-            "productName": "Leaf Rakke",
-            "productCode": "FFS-d23",
-            "releaseDate": "March 19, 2009",
-            "description": "Some description here",
-            "price": 20.23
-        }
-    ]
+    {
+        "productId": 1,
+        "productName": "Leaf Rakke",
+        "productCode": "FFS-d23",
+        "releaseDate": "March 19, 2009",
+        "description": "Some description here",
+        "price": 20.23
+    },
+    {
+        "productId": 1,
+        "productName": "Soma Another",
+        "productCode": "FFS-d24",
+        "releaseDate": "March 19, 2009",
+        "description": "Some description here",
+        "price": 20.23
+    },
+    {
+        "productId": 1,
+        "productName": "Soma Another One",
+        "productCode": "DDS-d24",
+        "releaseDate": "March 19, 2009",
+        "description": "Some other description here",
+        "price": 20.23
+    }
+]

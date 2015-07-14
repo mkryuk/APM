@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -9,9 +10,9 @@ using APM.Server.Models;
 
 namespace APM.Server.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class ProductsController : ApiController
-    {
-        [EnableCors("*","*", "*")]
+    {        
         // GET: api/Products        
         public IEnumerable<Product> Get()
         {
@@ -19,10 +20,11 @@ namespace APM.Server.Controllers
             return ps.Retrieve();
         }
 
-        // GET: api/Products/5
-        public string Get(int id)
-        {
-            return "value";
+        // GET: api/Products/FFQ        
+        public IEnumerable<Product> Get(string search)
+        {            
+            var pr = new ProductRepository();
+            return pr.Retrieve().Where(p => p.ProductCode.Contains(search));            
         }
 
         // POST: api/Products

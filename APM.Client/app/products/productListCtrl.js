@@ -7,7 +7,9 @@
 
         var vm = this;
         vm.products = [];
-        productResource.query(function (data) {
+        vm.searchCriteria = "FFS";
+
+        productResource.query({search: vm.searchCriteria}, function (data) {
             vm.products = data;
         });
     }
