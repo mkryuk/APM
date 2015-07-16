@@ -84,6 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\products\productEditCtrl.js" />
+    <Content Include="app\products\productEditView.html" />
     <Content Include="app\products\productListCtrl.js" />
     <Content Include="app\products\productListView.html" />
     <Content Include="common\productResource.js" />

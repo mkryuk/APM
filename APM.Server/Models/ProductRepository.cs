@@ -55,8 +55,8 @@ namespace APM.Server.Models
         internal Product Save(int id, Product product)
         {
             var products = this.Retrieve();
-            var itemIndex = products.FindIndex(p => p.ProductId == product.ProductId);
-            if (itemIndex > 0)
+            var itemIndex = products.FindIndex(p => p.ProductId == product.ProductId);            
+            if (itemIndex >= 0)
             {
                 products[itemIndex] = product;
             }

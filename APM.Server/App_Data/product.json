@@ -1,26 +1,74 @@
-﻿[
-    {
-        "productId": 1,
-        "productName": "Leaf Rakke",
-        "productCode": "FFS-d23",
-        "releaseDate": "March 19, 2009",
-        "description": "Some description here",
-        "price": 20.23
-    },
-    {
-        "productId": 1,
-        "productName": "Soma Another",
-        "productCode": "FFS-d24",
-        "releaseDate": "March 19, 2009",
-        "description": "Some description here",
-        "price": 20.23
-    },
-    {
-        "productId": 1,
-        "productName": "Soma Another One",
-        "productCode": "DDS-d24",
-        "releaseDate": "March 19, 2009",
-        "description": "Some other description here",
-        "price": 20.23
-    }
+[
+  {
+    "Description": "Some new description here",
+    "Price": 121.23,
+    "ProductCode": "FFS-d25",
+    "ProductId": 1,
+    "ProductName": "12345",
+    "ReleaseDate": "2009-06-17T00:00:00"
+  },
+  {
+    "Description": "Some other description here",
+    "Price": 222.23,
+    "ProductCode": "DDS-d24",
+    "ProductId": 2,
+    "ProductName": "Soma Another One",
+    "ReleaseDate": "2009-08-19T00:00:00"
+  },
+  {
+    "Description": "Some description here",
+    "Price": 121.23,
+    "ProductCode": "FFS-d24",
+    "ProductId": 3,
+    "ProductName": "Soma Another",
+    "ReleaseDate": "2009-06-17T00:00:00"
+  },
+  {
+    "Description": "Some description here",
+    "Price": 121.23,
+    "ProductCode": "FFS-d24",
+    "ProductId": 4,
+    "ProductName": "Soma Another",
+    "ReleaseDate": "2009-06-17T00:00:00"
+  },
+  {
+    "Description": "Some description here",
+    "Price": 121.23,
+    "ProductCode": "FFS-d24",
+    "ProductId": 5,
+    "ProductName": "Five Another",
+    "ReleaseDate": "2009-06-17T00:00:00"
+  },
+  {
+    "Description": "fdafadsf",
+    "Price": 0.0,
+    "ProductCode": "sdf",
+    "ProductId": 6,
+    "ProductName": "test",
+    "ReleaseDate": "2015-07-16T14:20:02.647504+03:00"
+  },
+  {
+    "Description": "fdafadsf",
+    "Price": 0.0,
+    "ProductCode": "sdf",
+    "ProductId": 7,
+    "ProductName": "test",
+    "ReleaseDate": "2015-07-16T14:20:02.647504+03:00"
+  },
+  {
+    "Description": "fdafadsf",
+    "Price": 0.0,
+    "ProductCode": "sdf",
+    "ProductId": 8,
+    "ProductName": "test",
+    "ReleaseDate": "2015-07-16T14:20:02.647504+03:00"
+  },
+  {
+    "Description": "asdfadsf",
+    "Price": 0.0,
+    "ProductCode": "12",
+    "ProductId": 9,
+    "ProductName": "qwerq",
+    "ReleaseDate": "2015-07-16T14:24:57.6970506+03:00"
+  }
 ]
