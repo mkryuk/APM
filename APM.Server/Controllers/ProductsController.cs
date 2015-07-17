@@ -20,8 +20,8 @@ namespace APM.Server.Controllers
     public class ProductsController : ApiController
     {        
         // GET: api/Products       
-        //EnableQuery needs for OData query
-        [EnableQuery()]        
+        //EnableQuery needs for OData query        
+        [EnableQuery()]
         [ResponseType(typeof(IQueryable<Product>))]
         public IHttpActionResult Get()
         {
@@ -48,6 +48,7 @@ namespace APM.Server.Controllers
         //}
 
         // GET: api/Products/FFQ              
+        [Authorize()]
         [ResponseType(typeof(Product))]
         public IHttpActionResult Get(int id)
         {

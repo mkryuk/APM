@@ -11,6 +11,7 @@
         vm.product = {};
         vm.message = '';
 
+
         productResource.get({ id: 1 },
             //success
             function (data) {

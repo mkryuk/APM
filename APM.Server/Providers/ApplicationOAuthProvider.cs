@@ -29,6 +29,9 @@ namespace APM.Server.Providers
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
+            //Allow CORS for the /Token endpoint
+            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+
             var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
 
             ApplicationUser user = await userManager.FindAsync(context.UserName, context.Password);
@@ -46,7 +49,7 @@ namespace APM.Server.Providers
 
             AuthenticationProperties properties = CreateProperties(user.UserName);
             AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
-            context.Validated(ticket);
+            context.Validated(ticket); 
             context.Request.Context.Authentication.SignIn(cookiesIdentity);
         }
 
